@@ -1,0 +1,615 @@
+/* umumiy */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+}
+
+/* hamma container lar bir xil */
+/* width: 90% - ekran kichrayganda chetlarida joy qoladi, max-width - katta ekranda 1200 dan oshmaydi */
+.topbar-inner,
+.header-inner,
+.nav-inner,
+.hero-inner,
+.features-inner,
+.brands-inner,
+.featured-inner,
+.categories-inner,
+.products-inner,
+.reviews-inner,
+.recent-inner,
+.footer-inner,
+.footer-bottom {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* umumiy end */
+
+
+/* topbar */
+.topbar-container {
+  background: #272343;
+  color: white;
+  font-size: 12px;
+  padding: 12px 0;
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* topbar end */
+
+
+/* header */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.header-logo {
+  color: #272343;
+}
+
+.header-search {
+  flex: 1 1 200px;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.header-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* header end */
+
+
+/* nav */
+.nav-container {
+  border-top: 1px solid #eee;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 14px 0;
+  font-size: 13px;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+
+/* nav end */
+
+
+/* hero */
+.hero-container {
+  background: #f0f2f3;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 550px;
+  padding: 60px 60px 200px 60px;
+}
+
+.hero-text {
+  width: 500px;
+  max-width: 100%;
+}
+
+.hero-small {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 54px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background: #007580;
+  color: white;
+  padding: 14px 24px;
+  text-decoration: none;
+}
+
+.hero-image {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #8f8e8e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chair-image {
+  width: 75%;
+  position: absolute;
+  top: 20%;
+}
+
+.hero-discount {
+  width: 80px;
+  height: 80px;
+  background: white;
+  color: red;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 15px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  right: 7%;
+  top: 20%;
+}
+
+/* hero end */
+
+
+/* features */
+.features-inner {
+  background-color: white;
+  margin-top: -50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  padding: 40px 20px;
+  box-shadow: 1px 1px 10px lightgray;
+  border-radius: 12px;
+}
+
+.features-arrows {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.left {
+  color: white;
+  background-color: #007580;
+  width: 44px;
+  height: 44px;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  color: black;
+  background-color: #F0F2F3;
+  width: 44px;
+  height: 44px;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-text {
+  font-size: 12px;
+  color: #888;
+  margin-top: 6px;
+}
+
+/* features end */
+
+
+/* brands */
+.brands-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  padding: 30px 0;
+}
+
+/* brands end */
+
+
+/* featured */
+.featured-inner {
+  padding: 40px 0;
+}
+
+.featured-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featured-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.featured-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* featured end */
+
+
+/* categories */
+.categories-inner {
+  padding: 40px 0;
+}
+
+.categories-arrows {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.categories-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categories-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.categories-card-content {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 85px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.categories-card {
+  flex: 1 1 250px;
+  max-width: 380px;
+  color: white;
+  position: relative;
+}
+
+.categories-count {
+  font-size: 12px;
+}
+
+/* categories end */
+
+
+/* products */
+.products-inner {
+  padding: 40px 0;
+}
+
+.products-title {
+  text-align: center;
+}
+
+.product-card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.products-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-card-icon {
+  padding: 10px;
+  background-color: #F0F2F3;
+  border-radius: 8px;
+}
+
+.products-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  font-size: 12px;
+  margin: 20px 0 30px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* products end */
+
+
+/* reviews */
+.reviews-container {
+  background: #f0f2f3;
+}
+
+.reviews-inner {
+  padding: 50px 0;
+  font-family: Roboto, sans-serif;
+}
+
+.review-arrows {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.reviews-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.reviews-card {
+  flex: 1 1 300px;
+  max-width: 580px;
+  background: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: space-between;
+}
+
+.reviews-text {
+  margin-bottom: 20px;
+  border-left: 2px solid #029FAE;
+  padding: 0 10px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #636270;
+}
+
+.rewiew-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.author-name {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  gap: 8px;
+}
+
+.reviews-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.reviews-job {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #9A9CAA;
+}
+
+/* reviews end */
+
+
+/* recent */
+.recent-inner {
+  padding: 40px 0;
+}
+
+.recent-arrows {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.recent-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.recent-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* recent end */
+
+
+/* product card (featured, products, recent uchun umumiy) */
+/* flex: 1 1 220px - karta kamida 220px bo'ladi, sig'masa keyingi qatorga tushadi */
+.product-card {
+  flex: 1 1 220px;
+  max-width: 285px;
+}
+
+.product-tag {
+  font-size: 12px;
+  color: #01ad5a;
+  margin-top: 8px;
+  height: 16px;
+}
+
+.product-name {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.product-price s {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: normal;
+}
+
+/* product card end */
+
+
+/* footer */
+.footer-container {
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.footer-about {
+  width: 280px;
+  max-width: 100%;
+}
+
+.footer-text {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.footer-heading {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.footer-input {
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.footer-btn {
+  background: #029fae;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+}
+
+.footer-small {
+  font-size: 11px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+/* footer end */
+
+
+/* responsive */
+/* ekran kichrayganda hero ustma-ust tushadi */
+@media (max-width: 1000px) {
+  .hero-inner {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    padding: 40px 20px 150px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 34px;
+  }
+}
+
+/* responsive end */
